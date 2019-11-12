@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TinyMCE4 demo</title>
+        <meta charset="UTF-8">
+        <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+        <script>
+            tinymce.init({
+                selector: '#mytextarea',
+                plugins: 'tiny_mce_wiris',
+                toolbar: 'code,|,bold,italic,underline,|,cut,copy,paste,|,search,|,undo,redo,|,forecolor,backcolor,|,justifyleft,justifycenter,justifyright,fontselect,fontsizeselect,|,tiny_mce_wiris_formulaEditor,tiny_mce_wiris_formulaEditorChemistry,|,fullscreen',
+                external_plugins: {
+                    'tiny_mce_wiris': '/../plugin.min.js'
+                },
+            });
+        </script>
+    </head>
+    <body>
+        <form method="post">
+            <textarea id="mytextarea">Hello, World!</textarea>
+        </form>
+    </body>
+</html>
